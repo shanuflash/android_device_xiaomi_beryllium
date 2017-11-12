@@ -1,2 +1,11 @@
 on init
     mount none /system/etc/audio_platform_info.xml /vendor/etc/audio_platform_info.xml bind
+
+# Safetynet bypass
+# Inspired in magisk source code, by topjohnwu
+# Ported to ramdisk by jhenrique09
+
+on property:sys.boot_completed=1
+   # selinux nodes, hide permissive state
+   chmod 0640 /sys/fs/selinux/enforce
+   chmod 0440 /sys/fs/selinux/policy
