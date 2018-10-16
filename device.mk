@@ -5,7 +5,6 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
--include $(SRC_TARGET_DIR)/product/treble_common_64.mk
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
