@@ -18,6 +18,9 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Compile with SDClang
 TARGET_USE_SDCLANG := true
 
+# Wifi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := beryllium_defconfig
 
