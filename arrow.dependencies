@@ -10,5 +10,9 @@
   {
     "repository": "android_vendor_xiaomi_beryllium",
     "target_path": "vendor/xiaomi"
+  },
+  {
+    "repository": "sdclang-6.0",
+    "target_path": "vendor/qcom/sdclang-6.0"
   }
 ]
