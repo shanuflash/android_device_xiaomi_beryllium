@@ -7,10 +7,10 @@
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_beryllium
+PRODUCT_NAME := lluvia_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Poco F1
@@ -24,3 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="beryllium"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi-rev1
+TARGET_BOOT_ANIMATION_RES := 1080
